@@ -1,0 +1,33 @@
+.tile {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center items vertically */
+    padding: 10px; /* Add padding for spacing */
+    border: 1px solid #ccc; /* Add a border for visual separation */
+    border-radius: 5px;
+    width: 200px; /* Adjust width as needed */
+    height: 180px; /* Adjust height as needed */
+  }
+  
+  .tile img {
+    max-width: 100%; /* Ensure image doesn't overflow its container */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Add spacing if image is on the left */
+  }
+  
+  .tile p {
+    margin-top: 60px;
+    flex-grow: 1; /* Allow text to fill remaining space */
+    margin: 0;
+  }
+/* 
+  .tile {
+    flex-direction: row;
+  }
+  
+  .tile img {
+    margin-right: 10px;
+  }
+  
+  .tile p {
+    text-align: right;
+  } */

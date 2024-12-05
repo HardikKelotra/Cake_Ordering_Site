@@ -1,0 +1,22 @@
+{
+  "name": "project_cake_site",
+  "version": "1.0.0",
+  "description": "A Cake Site For My sister",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js",
+    "start": "nodemon index.js"
+  },
+  "author": "Hardik Kelotra",
+  "license": "ISC",
+  "dependencies": {
+    "cookie-parser": "^1.4.7",
+    "cookies": "^0.9.1",
+    "cors": "^2.8.5",
+    "express": "^4.21.1",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.7.1",
+    "nodemon": "^3.1.7",
+    "uuid": "^10.0.0"
+  }
+}

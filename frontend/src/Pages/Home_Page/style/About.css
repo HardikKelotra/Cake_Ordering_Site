@@ -1,0 +1,41 @@
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.about-content h2 {
+    margin-left: 30px;
+    font-size: 2.5rem;
+    color: #4C3F54;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    margin-left: 30px;
+    font-size: 1.2rem;
+    color: #4C3F54;
+    margin-bottom: 30px;
+}
+
+.get-directions-btn {
+    margin-left: 30px;
+    background-color: #E75A7C;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.get-directions-btn:hover {
+    background-color: #D34B65;
+}
