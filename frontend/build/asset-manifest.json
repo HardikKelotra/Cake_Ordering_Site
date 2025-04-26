@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.2159e10b.css",
+    "main.js": "/static/js/main.51c5e5bb.js",
+    "static/js/453.8ab44547.chunk.js": "/static/js/453.8ab44547.chunk.js",
+    "static/media/Indian_dessert(1).png": "/static/media/Indian_dessert(1).a50ddc3fbd7fb28b187d.png",
+    "static/media/Indian_Snack.png": "/static/media/Indian_Snack.05fe2609b475dcebc336.png",
+    "static/media/Birthday_Cake.png": "/static/media/Birthday_Cake.f6cbf2039451e4e9f9d4.png",
+    "static/media/Graduation_Cake.png": "/static/media/Graduation_Cake.156411177f929053819a.png",
+    "static/media/Wedding_Cake.png": "/static/media/Wedding_Cake.cb0f47b35e030852245c.png",
+    "static/media/cake_1.png": "/static/media/cake_1.51600d06977771b20a96.png",
+    "static/media/the_malwa.png": "/static/media/the_malwa.2fb8c369da32dae3ff26.png",
+    "static/media/first.jpg": "/static/media/first.acb8530a9192c8412794.jpg",
+    "static/media/the_malwa(1).png": "/static/media/the_malwa(1).b3c47a976a9114628051.png",
+    "index.html": "/index.html",
+    "main.2159e10b.css.map": "/static/css/main.2159e10b.css.map",
+    "main.51c5e5bb.js.map": "/static/js/main.51c5e5bb.js.map",
+    "453.8ab44547.chunk.js.map": "/static/js/453.8ab44547.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2159e10b.css",
+    "static/js/main.51c5e5bb.js"
+  ]
+}
