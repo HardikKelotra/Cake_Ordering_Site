@@ -13,8 +13,10 @@ const CardWithData = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch("http://localhost:8000/Menu");
-                
+                console.log("Fetching data from backend...0", process.env.REACT_APP_BACKEND_URL);
+                console.log("Fetching data from backend...1", `${process.env.REACT_APP_BACKEND_URL}/Menu`);
+                const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/Menu`);
+                console.log("Response",response);
                 if (!response.ok) {
                     throw new Error(`HTTP error! status: ${response.status}`);
                 }

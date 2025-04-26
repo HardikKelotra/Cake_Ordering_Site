@@ -1,6 +1,6 @@
 const express = require("express");
 const cors =require("cors");
-
+require('dotenv').config();
 const cookieParser = require('cookie-parser');
 const {EncodeDecode} =require("./middlewares/For_all")
 

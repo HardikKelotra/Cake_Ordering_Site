@@ -1,6 +1,8 @@
 const mongoose = require("mongoose");
-
-mongoose.connect('mongodb://127.0.0.1:27017/Cake_Site')
+const dotenv = require("dotenv");
+dotenv.config();
+console.log("Connecting to MongoDB...", process.env.MONGODB_URI);
+mongoose.connect(`${process.env.MONGODB_URI}`)
     .then(() => console.log("MongoDB Connected"))
     .catch((err) => console.log("Failed to connect MongoDB", err));
 
