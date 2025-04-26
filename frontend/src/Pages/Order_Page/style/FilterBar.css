@@ -1,0 +1,26 @@
+.filter-bar {
+    display: flex; /* Use flexbox layout */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically (optional) */
+    gap: 10px; /* Add some space between the options */
+    padding: 10px; /* Add padding around the filter bar */
+    background-color: #f8f8f8; /* Optional: Add a background color */
+    border-radius: 8px; /* Optional: Add rounded corners */
+}
+
+.filter-option {
+    cursor: pointer; /* Change cursor to pointer on hover */
+    padding: 10px 20px; /* Add padding for the options */
+    border: 1px solid #ccc; /* Optional: Add border */
+    border-radius: 5px; /* Optional: Round the corners of each option */
+    transition: background-color 0.3s; /* Optional: Smooth background color transition */
+}
+
+.filter-option:hover {
+    background-color: #e0e0e0; /* Optional: Change background color on hover */
+}
+
+.filter-option.selected {
+    background-color: #d1e7dd; /* Optional: Highlight selected option */
+    border-color: #0d6efd; /* Optional: Change border color for selected option */
+}

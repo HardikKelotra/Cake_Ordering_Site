@@ -1,0 +1,60 @@
+/* Base style for tile-section */
+.tile-section {
+    display: flex;
+    justify-content: center; /* Default center alignment */
+    gap: 20px;
+    padding: 40px 0;
+    overflow-x: auto; /* Enables horizontal scrolling on smaller screens */
+    white-space: nowrap; /* Prevents wrapping of the tiles */
+    scroll-padding-left: 0; /* No scroll padding on larger screens */
+    padding-left: 0; /* No padding on larger screens */
+}
+
+/* Media query for medium and small screens */
+@media (max-width: 1024px) {
+    .tile-section {
+        justify-content: flex-start; /* Align to the left for medium and small screens */
+        scroll-padding-left: 20px; /* Ensures space on the left side when scrolling */
+        padding-left: 20px; /* Add padding for smooth horizontal scroll */
+    }
+}
+
+/* Scrollbar customization */
+.tile-section::-webkit-scrollbar {
+    height: 8px; /* Customize scrollbar height */
+}
+
+.tile-section::-webkit-scrollbar-thumb {
+    background-color: #ccc; /* Customize scrollbar thumb */
+    border-radius: 10px;
+}
+
+.tile-section::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Customize scrollbar track */
+}
+
+/* Tile styling */
+.tile {
+    display: inline-flex; /* Ensures tiles stay in a row */
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.tile img {
+    max-width: 50px;
+    margin-bottom: 10px;
+}
+
+.tile h3 {
+    font-size: 1.1rem;
+    color: #4C3F54;
+}
+
+.tile:hover {
+    transform: scale(1.05);
+}

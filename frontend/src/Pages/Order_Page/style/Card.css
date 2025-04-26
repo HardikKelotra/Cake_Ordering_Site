@@ -1,0 +1,97 @@
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 16px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 16px;
+  }
+  
+  .cake-img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .card-details {
+    margin-top: 12px;
+  }
+  
+  .cake-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .cake-description {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .cake-price {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ff4b5c;
+    margin: 8px 0;
+  }
+  
+  .quantity-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12px;
+  }
+  
+  .quantity-btn {
+    padding: 8px 12px;
+    font-size: 16px;
+    background-color: #ff4b5c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .quantity-btn:hover {
+    background-color: #ff2b3c;
+  }
+  
+  .quantity-display {
+    font-size: 16px;
+    margin: 0 12px;
+  }
+
+  .go-to-cart-btn {
+    padding: 10px 16px;
+    font-size: 16px;
+    background-color: #28a745; /* Green color */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 12px;
+    transition: background-color 0.3s;
+}
+
+.go-to-cart-btn:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+.add-to-cart-btn {
+  padding: 10px 16px;
+  font-size: 16px;
+  background-color: #007bff; /* Blue color */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 12px;
+  margin-right: 8px; /* Add margin for spacing */
+  transition: background-color 0.3s;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #0069d9; /* Darker blue on hover */
+}
+

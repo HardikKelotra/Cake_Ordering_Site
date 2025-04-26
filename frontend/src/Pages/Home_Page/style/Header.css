@@ -1,0 +1,192 @@
+/* Container */
+.header {
+    background-color: #f7cfdf;
+    padding: 40px 20px; /* Reduced from 80px to 40px */
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Logo and Navbar container */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px; /* Reduced from 30px to 20px */
+    padding: 10px 20px;
+    flex-direction: column; /* Stack logo and navbar vertically on smaller screens */
+    align-items: center; /* Center-align items */
+}
+
+/* Logo Styling */
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #4C3F54; /* Text color */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    letter-spacing: 1px; /* Slightly spaced letters for elegance */
+    font-family: 'Dancing Script', cursive; /* Artistic font */
+}
+
+.logo img {
+    width: 70px; /* Adjust size for your logo */
+    margin-right: 10px;
+    transition: transform 0.3s ease; /* Hover effect */
+}
+
+.logo img:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Prevent wrapping */
+    margin-top: 20px; /* Adjust as needed */
+    width: 100%; /* Full width */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    flex-direction: row; /* Keep items in a row */
+    gap: 30px; /* Adjust spacing between items */
+    align-items: center; /* Center align items */
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 1.5rem; /* Base size */
+    font-weight: 500;
+    padding: 12px 30px; /* Ample padding */
+    border-radius: 10px;
+    color: #242223;
+    background-color: #f7cfdf;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-family: 'Dancing Script', cursive;
+    white-space: nowrap; /* Prevent text from wrapping */
+    width: auto; /* Allow width to adjust */
+}
+
+.nav-links a:hover {
+    background-color: rgba(255, 173, 173, 0.6); /* Hover effect */
+    transform: translateY(-2px); /* Lift on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Cart Button */
+.cart-btn {
+    background-color: rgba(255, 202, 212, 0.4); /* Light pink */
+    color: white;
+    font-weight: bold;
+}
+
+.cart-btn:hover {
+    background-color: rgba(255, 173, 173, 0.7); /* Hover effect */
+}
+
+/* Main Header Text */
+.header h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+    text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.2);
+    letter-spacing: 1.5px;
+    background: linear-gradient(90deg, #611b1b 0%, #d00c30 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent; /* For WebKit browsers */
+}
+
+/* Subtext Styling */
+.header p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #666281;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 25px; /* Increased gap for better spacing */
+    }
+
+    .nav-links a {
+        font-size: 1.3rem; /* Slightly smaller for medium screens */
+        padding: 10px 20px; /* Adjust padding */
+    }
+
+    .header h1 {
+        font-size: 2.5rem; /* Smaller on medium screens */
+    }
+
+    .header p {
+        font-size: 1rem;
+    }
+
+    .header .explore-btn {
+        margin-top: 20px;
+        padding: 12px 35px;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-links {
+        gap: 15px; /* Increased gap for better spacing */
+    }
+
+    .nav-links a {
+        font-size: 1rem; /* Smaller for mobile */
+        padding: 8px 15px;
+    }
+
+    .header h1 {
+        font-size: 2rem; /* Further reduction for mobile */
+    }
+
+    .header p {
+        font-size: 0.9rem;
+    }
+
+    .header .explore-btn {
+        padding: 10px 30px;
+    }
+}
+
+/* Scrollbar for Navbar */
+.navbar::-webkit-scrollbar {
+    height: 8px; /* Height of the scrollbar */
+}
+
+.navbar::-webkit-scrollbar-thumb {
+    background: #ccc; /* Color of the scrollbar thumb */
+    border-radius: 4px; /* Rounded corners */
+}
+
+.navbar::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Scrollbar track */
+}
+
+/* Login/Signup Button Hover Effect */
+.header .login-signup-btn:hover {
+    background-color: rgba(255, 173, 173, 0.6); /* Hover effect */
+    transform: translateY(-2px); /* Lift on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
